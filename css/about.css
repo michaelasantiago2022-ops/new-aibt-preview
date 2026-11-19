@@ -857,3 +857,289 @@ textarea {
     transition: none;
   }
 }
+
+
+/* AIBT WHATSAPP WIDGET */
+
+.aibt-wa-widget {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 99999;
+  font-family: 'Figtree', sans-serif;
+}
+
+/* Hide checkbox */
+
+#aibt-wa-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Greeting */
+
+.aibt-wa-greeting {
+  position: absolute;
+  right: 0;
+  bottom: 80px;
+  width: 220px;
+  padding: 17px 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0,0,0,.13);
+  color: #242342;
+}
+
+.aibt-wa-greeting strong {
+  font-size: 15px;
+}
+
+.aibt-wa-greeting p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #68677c;
+}
+
+.aibt-wa-greeting-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  color: #888;
+  font-size: 20px;
+}
+
+/* Floating Button */
+
+.aibt-wa-button {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(0,0,0,.2);
+  transition: .25s ease;
+}
+
+.aibt-wa-button:hover {
+  transform: scale(1.07);
+}
+
+.aibt-wa-button svg {
+  width: 35px;
+  height: 35px;
+}
+
+/* Chat Panel */
+
+.aibt-wa-panel {
+  position: absolute;
+  right: 0;
+  bottom: 78px;
+  width: 360px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0,0,0,.18);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: .25s ease;
+}
+
+/* Open Panel */
+
+#aibt-wa-toggle:checked ~ .aibt-wa-panel {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#aibt-wa-toggle:checked ~ .aibt-wa-greeting {
+  display: none;
+}
+
+/* Header */
+
+.aibt-wa-header {
+  background: #E11B22;
+  color: #fff;
+  padding: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aibt-wa-header strong {
+  display: block;
+  font-size: 14px;
+}
+
+.aibt-wa-header span {
+  display: block;
+  font-size: 11px;
+  margin-top: 4px;
+  opacity: .8;
+}
+
+.aibt-wa-close {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Content */
+
+.aibt-wa-content {
+  padding: 18px 16px;
+  background: #f8f8fc;
+}
+
+.aibt-wa-welcome {
+  padding: 14px;
+  background: #fff;
+  border-radius: 11px;
+  margin-bottom: 15px;
+}
+
+.aibt-wa-welcome strong {
+  color: #E11B22;
+  font-size: 14px;
+}
+
+.aibt-wa-welcome p {
+  font-size: 13px;
+  color: #333;
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+.aibt-wa-welcome small {
+  font-size: 11px;
+  color: #888;
+}
+
+/* Options */
+
+.aibt-wa-options {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.aibt-wa-options a {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 12px;
+  background: #fff;
+  border: 1px solid #e9e8f1;
+  border-radius: 10px;
+  text-decoration: none !important;
+  color: #242342 !important;
+  transition: .2s ease;
+}
+
+.aibt-wa-options a:hover {
+  border-color: #2e2c70;
+  background: #f4f3fa;
+}
+
+.aibt-wa-icon {
+  width: 35px;
+  height: 35px;
+  background: #f1f0fa;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 17px;
+}
+
+.aibt-wa-options a strong {
+  display: block;
+  font-size: 12px;
+}
+
+.aibt-wa-options a small {
+  display: block;
+  margin-top: 4px;
+  font-size: 10px;
+  color: #85849a;
+}
+
+.aibt-wa-options a b {
+  margin-left: auto;
+  font-size: 22px;
+  color: #9998ae;
+}
+
+/* Footer */
+
+.aibt-wa-footer {
+  padding: 12px;
+  text-align: center;
+  color: #999;
+  font-size: 10px;
+  background: #fff;
+}
+
+/* WhatsApp Mobile */
+
+@media (max-width:480px) {
+  .aibt-wa-widget {
+    right: 16px;
+    bottom: 18px;
+  }
+
+  .aibt-wa-panel {
+    width: min(360px, calc(100vw - 32px));
+  }
+
+  .aibt-wa-button {
+    width: 57px;
+    height: 57px;
+  }
+}
+
+/* GENERAL RESPONSIVE LAYOUT */
+
+@media (max-width:860px) {
+  .hero .grid,
+  .split,
+  .campus,
+  footer .cols {
+    grid-template-columns: 1fr;
+  }
+
+  .menu > li > a {
+    padding: 10px 8px;
+  }
+
+  .bar {
+    padding: 10px 0;
+    gap: 8px 16px;
+  }
+
+  .drop {
+    position: static;
+    box-shadow: none;
+  }
+
+  .menu > li:hover .drop {
+    display: none;
+  }
+
+  section {
+    padding: 52px 0;
+  }
+
+  .feature {
+    padding: 28px;
+  }
+}
