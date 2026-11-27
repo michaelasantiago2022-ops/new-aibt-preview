@@ -198,3 +198,15 @@ p { margin: 0 0 16px; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+
+/* VET for School featured qualification panel */
+.vet-feature-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:48px;align-items:center}
+.vet-feature-grid h2{margin:14px 0 18px}
+.vet-feature-grid .lead{max-width:760px}
+.vet-feature-facts{padding:28px;background:#fff;border:1px solid var(--line);border-radius:15px;box-shadow:0 12px 32px rgba(46,44,112,.06)}
+.vet-feature-facts h3{color:var(--brand);margin-bottom:16px}
+.vet-feature-facts div{display:flex;justify-content:space-between;gap:15px;padding:12px 0;border-bottom:1px solid var(--line)}
+.vet-feature-facts div span{color:var(--muted);font-size:.88rem}
+.vet-feature-facts div strong{text-align:right;color:var(--brand);font-size:.92rem}
+.vet-feature-facts small{display:block;margin-top:15px;color:var(--muted);line-height:1.6}
+@media(max-width:850px){.vet-feature-grid{grid-template-columns:1fr;gap:25px}}

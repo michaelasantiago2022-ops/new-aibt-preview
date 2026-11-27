@@ -10,3 +10,35 @@
 .pathway-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}.pathway-grid article{padding:28px;background:#fff;border:1px solid var(--line);border-radius:13px}.pathway-grid article>span{display:block;color:var(--accent);font-size:.8rem;font-weight:800;letter-spacing:.12em;margin-bottom:22px}.pathway-grid h3{color:var(--brand)}.pathway-grid p{color:var(--muted);font-size:.94rem;line-height:1.8;margin:0}.admissions-card .button{margin:10px 0 4px}.admissions-card .text-link{display:block}.final-course-cta{padding:48px;background:#f1f0f8;border:1px solid var(--line);border-radius:18px;display:flex;align-items:center;justify-content:space-between;gap:30px}.final-course-cta h2{margin-bottom:10px}.final-course-cta p{margin:0;color:var(--muted)}.button-outline-dark{background:transparent;color:var(--brand);border-color:var(--brand)}.button-outline-dark:hover{color:#fff;border-color:var(--brand)}
 @media(max-width:900px){.course-hero-inner{grid-template-columns:1fr;gap:30px;padding:68px 0}.course-hero-aside{max-width:520px}.detail-grid{grid-template-columns:1fr;gap:30px}.fact-grid{grid-template-columns:repeat(2,1fr)}.course-anchor-wrap{top:76px}.final-course-cta{align-items:flex-start;flex-direction:column}}
 @media(max-width:620px){.course-hero-inner{padding:56px 0;min-height:0}.course-hero h1{font-size:2.55rem}.course-anchor-wrap{top:110px}.course-anchor{gap:22px}.fact-grid,.pathway-grid{grid-template-columns:1fr}.fact-card{min-height:0}.official-link-panel{align-items:flex-start;flex-direction:column}.official-link-panel .button{width:100%}.final-course-cta{padding:30px 22px}.detail-callout,.admissions-card{padding:25px}}
+
+/* Expanded AIHE-inspired course detail sections */
+.course-note{margin-top:28px;max-width:900px}
+.fee-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:32px}
+.fee-card{padding:28px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 10px 28px rgba(46,44,112,.045)}
+.fee-label{display:block;color:var(--accent);font-size:.72rem;font-weight:800;letter-spacing:.13em;margin-bottom:15px}
+.fee-card h3{margin-bottom:12px;color:var(--brand)}
+.fee-amount{display:block;font-size:2.25rem;line-height:1.2;color:var(--brand);margin:8px 0}
+.fee-card p,.fee-alt span,.fee-line span{color:var(--muted);font-size:.9rem}
+.fee-alt{border-top:1px solid var(--line);margin-top:22px;padding-top:18px}
+.fee-alt strong{display:block;color:var(--accent);font-size:1.35rem}
+.fee-alt span{display:block;margin-top:3px}
+.fee-line{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px solid var(--line)}
+.fee-line strong{font-size:1.25rem;color:var(--brand);white-space:nowrap}
+.fee-note{margin-top:15px!important;font-size:.82rem!important}
+.intake-strip{display:flex;justify-content:space-between;gap:25px;padding:25px 28px;margin-top:20px;background:var(--brand);border-radius:13px;color:#fff}
+.intake-strip span{display:block;color:#ffc7c8;font-size:.72rem;font-weight:800;letter-spacing:.12em;margin-bottom:7px}
+.intake-strip strong{font-size:1.12rem;color:#fff}
+.requirements-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:32px}
+.course-list{padding-left:20px;margin:14px 0;color:var(--muted);line-height:1.8}
+.course-list li{padding:5px 0}
+.lln-card{margin-top:20px}
+.unit-heading{margin:38px 0 18px;color:var(--brand)}
+.unit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.unit-item{display:flex;align-items:flex-start;gap:18px;padding:17px 19px;background:#fff;border:1px solid var(--line);border-radius:9px}
+.unit-item strong{min-width:105px;color:var(--accent);font-size:.86rem}
+.unit-item span{color:var(--text);font-size:.93rem;line-height:1.55}
+.career-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:28px}
+.career-grid div{padding:19px 20px;background:#fff;border:1px solid var(--line);border-radius:10px;font-weight:700;color:var(--brand)}
+.pathway-note{margin-top:28px}
+@media(max-width:850px){.fee-grid{grid-template-columns:1fr 1fr}.requirements-grid{grid-template-columns:1fr}.career-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.fee-grid,.unit-grid,.career-grid{grid-template-columns:1fr}.intake-strip{flex-direction:column}.unit-item{flex-direction:column;gap:5px}.fee-card{padding:23px}}
